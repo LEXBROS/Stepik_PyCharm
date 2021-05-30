@@ -1,1 +1,9 @@
-print('Hello World!')
+import datetime
+
+now = datetime.datetime.now()
+
+get_year = lambda now: now.year
+get_month = lambda now: now.month
+get_day = lambda now: now.day
+
+print(get_year(now), get_month(now), get_day(now))
